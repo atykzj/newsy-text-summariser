@@ -1,0 +1,24 @@
+---
+version: 1
+
+kind: experiment
+
+build:
+  dockerfile: polyaxon/docker/experiment.df
+  context: .
+
+environment:
+  persistence:
+    data: ["data"] # Set this to the key that will be provided to you
+    outputs: exp-output
+
+
+logging:
+  level: DEBUG
+
+run:
+  cmd: python -m src.experiment.main --data_path /polyaxon-data/aiap7/workspace/rui_han_lim/assignment8/data/data.csv \
+                                      --model_name ModelSumy \
+                                      --samples 2225 \
+                                      --seed 42 \
+
