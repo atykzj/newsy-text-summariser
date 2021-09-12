@@ -1,6 +1,8 @@
-# Introduction
+# [NEWSY](https://text-summariser-newsy.herokuapp.com/)
+Final Project for our Week 8 Team, a text summariser project that explores different summarising NLP models and their performances, and then deploy the final model for use. The website also applies the model to top 10 news articles from NewsAPI.
 
-NEWSY
+
+## NEWSY - File Structure
 
 
     team4
